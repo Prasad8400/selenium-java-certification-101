@@ -1,4 +1,7 @@
 # selenium-java-certification-101
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 Code for Selenium Java 101 Certification (LambdaTest) – includes UI automation using Selenium WebDriver, TestNG framework, and best practices.
 This project contains automation code written for the **LambdaTest Selenium Java 101 Certification**.
 
