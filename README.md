@@ -28,3 +28,8 @@ This repository demonstrates my proficiency in:
 1. Clone the repo:
    ```bash
    git clone https://github.com/YOUR_USERNAME/selenium-java-certification-101.git
+
+## 📬 Contact
+
+- 📧 Email: prasadsutar6544@gmail.com  
+- 💼 LinkedIn: [linkedin.com/in/prasadsutar8400](https://www.linkedin.com/in/prasadsutar8400/)
