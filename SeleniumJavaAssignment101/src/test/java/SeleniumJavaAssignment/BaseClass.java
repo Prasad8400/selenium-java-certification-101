@@ -18,8 +18,8 @@ import org.testng.annotations.Parameters;
 
 public class BaseClass {
 
-	private String username = "prasad_sutar2";
-	private String accesskey = "vowO0bsxfuhkcGtC8hH2p2g9ee6x6GGDPfRtifxyILK5VIjVNL";
+	private String username = "";
+	private String accesskey = "";
 	private String hubURL = "hub.lambdatest.com/wd/hub";
 
 	protected RemoteWebDriver driver;
