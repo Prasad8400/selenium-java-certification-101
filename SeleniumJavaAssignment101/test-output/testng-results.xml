@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="8" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-15T21:54:04 IST" name="Suite" finished-at="2025-01-15T21:55:10 IST" duration-ms="65947">
+    <groups>
+    </groups>
+    <test started-at="2025-01-15T21:54:04 IST" name="TestingWithEdgeInternet-Explorer" finished-at="2025-01-15T21:54:38 IST" duration-ms="33728">
+      <class name="SeleniumJavaAssignment.TestScenarios">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumJavaAssignment.TestScenarios@75d3a5e0]" started-at="2025-01-15T21:54:04 IST" name="setUp" finished-at="2025-01-15T21:54:19 IST" duration-ms="14808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[internet explorer]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[11.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setURI()[pri:0, instance:SeleniumJavaAssignment.TestScenarios@75d3a5e0]" started-at="2025-01-15T21:54:19 IST" name="setURI" finished-at="2025-01-15T21:54:20 IST" duration-ms="1221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setURI -->
+        <test-method signature="simpleFormDemo()[pri:1, instance:SeleniumJavaAssignment.TestScenarios@75d3a5e0]" started-at="2025-01-15T21:54:20 IST" name="simpleFormDemo" finished-at="2025-01-15T21:54:31 IST" duration-ms="10840" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //p[@id='message'] (tried for 7 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: ff4a9342-7ff0-4ab1-9699-3cb...}
+Session ID: ff4a9342-7ff0-4ab1-9699-3cb17e2402ec]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[@id='message'] (tried for 7 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: ff4a9342-7ff0-4ab1-9699-3cb...}
+Session ID: ff4a9342-7ff0-4ab1-9699-3cb17e2402ec
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at SeleniumJavaAssignment.TestScenarios.simpleFormDemo(TestScenarios.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleFormDemo -->
+        <test-method is-config="true" signature="onFailureTakeSS(org.testng.ITestResult)[pri:0, instance:SeleniumJavaAssignment.TestScenarios@75d3a5e0]" started-at="2025-01-15T21:54:31 IST" name="onFailureTakeSS" finished-at="2025-01-15T21:54:32 IST" duration-ms="410" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=simpleFormDemo status=FAILURE method=TestScenarios.simpleFormDemo()[pri:1, instance:SeleniumJavaAssignment.TestScenarios@75d3a5e0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFailureTakeSS -->
+        <test-method is-config="true" signature="setURI()[pri:0, instance:SeleniumJavaAssignment.TestScenarios@75d3a5e0]" started-at="2025-01-15T21:54:32 IST" name="setURI" finished-at="2025-01-15T21:54:32 IST" duration-ms="741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setURI -->
+        <test-method signature="sliderDemo()[pri:2, instance:SeleniumJavaAssignment.TestScenarios@75d3a5e0]" started-at="2025-01-15T21:54:32 IST" name="sliderDemo" finished-at="2025-01-15T21:54:35 IST" duration-ms="2650" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Slider value did not update correctly. expected [95] but found [15]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Slider value did not update correctly. expected [95] but found [15]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at SeleniumJavaAssignment.TestScenarios.sliderDemo(TestScenarios.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sliderDemo -->
+        <test-method is-config="true" signature="onFailureTakeSS(org.testng.ITestResult)[pri:0, instance:SeleniumJavaAssignment.TestScenarios@75d3a5e0]" started-at="2025-01-15T21:54:35 IST" name="onFailureTakeSS" finished-at="2025-01-15T21:54:35 IST" duration-ms="255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sliderDemo status=FAILURE method=TestScenarios.sliderDemo()[pri:2, instance:SeleniumJavaAssignment.TestScenarios@75d3a5e0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFailureTakeSS -->
+        <test-method is-config="true" signature="setURI()[pri:0, instance:SeleniumJavaAssignment.TestScenarios@75d3a5e0]" started-at="2025-01-15T21:54:35 IST" name="setURI" finished-at="2025-01-15T21:54:36 IST" duration-ms="674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setURI -->
+        <test-method signature="fromDemo()[pri:3, instance:SeleniumJavaAssignment.TestScenarios@75d3a5e0]" started-at="2025-01-15T21:54:36 IST" name="fromDemo" finished-at="2025-01-15T21:54:38 IST" duration-ms="1606" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please fill out this field.] but found [This is a required field]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please fill out this field.] but found [This is a required field]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at SeleniumJavaAssignment.TestScenarios.fromDemo(TestScenarios.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromDemo -->
+        <test-method is-config="true" signature="onFailureTakeSS(org.testng.ITestResult)[pri:0, instance:SeleniumJavaAssignment.TestScenarios@75d3a5e0]" started-at="2025-01-15T21:54:38 IST" name="onFailureTakeSS" finished-at="2025-01-15T21:54:38 IST" duration-ms="295" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=fromDemo status=FAILURE method=TestScenarios.fromDemo()[pri:3, instance:SeleniumJavaAssignment.TestScenarios@75d3a5e0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFailureTakeSS -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SeleniumJavaAssignment.TestScenarios@75d3a5e0]" started-at="2025-01-15T21:54:38 IST" name="tearDown" finished-at="2025-01-15T21:54:38 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SeleniumJavaAssignment.TestScenarios -->
+    </test> <!-- TestingWithEdgeInternet-Explorer -->
+    <test started-at="2025-01-15T21:54:04 IST" name="TestingWithEdge" finished-at="2025-01-15T21:54:48 IST" duration-ms="44154">
+      <class name="SeleniumJavaAssignment.TestScenarios">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumJavaAssignment.TestScenarios@563f38c4]" started-at="2025-01-15T21:54:04 IST" name="setUp" finished-at="2025-01-15T21:54:45 IST" duration-ms="40683" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[macOS Ventura]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[127.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setURI()[pri:0, instance:SeleniumJavaAssignment.TestScenarios@563f38c4]" started-at="2025-01-15T21:54:45 IST" name="setURI" finished-at="2025-01-15T21:54:45 IST" duration-ms="448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setURI -->
+        <test-method signature="simpleFormDemo()[pri:1, instance:SeleniumJavaAssignment.TestScenarios@563f38c4]" started-at="2025-01-15T21:54:45 IST" name="simpleFormDemo" finished-at="2025-01-15T21:54:46 IST" duration-ms="817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleFormDemo -->
+        <test-method is-config="true" signature="onFailureTakeSS(org.testng.ITestResult)[pri:0, instance:SeleniumJavaAssignment.TestScenarios@563f38c4]" started-at="2025-01-15T21:54:46 IST" name="onFailureTakeSS" finished-at="2025-01-15T21:54:46 IST" duration-ms="177" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=simpleFormDemo status=SUCCESS method=TestScenarios.simpleFormDemo()[pri:1, instance:SeleniumJavaAssignment.TestScenarios@563f38c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFailureTakeSS -->
+        <test-method is-config="true" signature="setURI()[pri:0, instance:SeleniumJavaAssignment.TestScenarios@563f38c4]" started-at="2025-01-15T21:54:46 IST" name="setURI" finished-at="2025-01-15T21:54:46 IST" duration-ms="92" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setURI -->
+        <test-method signature="sliderDemo()[pri:2, instance:SeleniumJavaAssignment.TestScenarios@563f38c4]" started-at="2025-01-15T21:54:46 IST" name="sliderDemo" finished-at="2025-01-15T21:54:47 IST" duration-ms="988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sliderDemo -->
+        <test-method is-config="true" signature="onFailureTakeSS(org.testng.ITestResult)[pri:0, instance:SeleniumJavaAssignment.TestScenarios@563f38c4]" started-at="2025-01-15T21:54:47 IST" name="onFailureTakeSS" finished-at="2025-01-15T21:54:48 IST" duration-ms="186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sliderDemo status=SUCCESS method=TestScenarios.sliderDemo()[pri:2, instance:SeleniumJavaAssignment.TestScenarios@563f38c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFailureTakeSS -->
+        <test-method is-config="true" signature="setURI()[pri:0, instance:SeleniumJavaAssignment.TestScenarios@563f38c4]" started-at="2025-01-15T21:54:48 IST" name="setURI" finished-at="2025-01-15T21:54:48 IST" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setURI -->
+        <test-method signature="fromDemo()[pri:3, instance:SeleniumJavaAssignment.TestScenarios@563f38c4]" started-at="2025-01-15T21:54:48 IST" name="fromDemo" finished-at="2025-01-15T21:54:48 IST" duration-ms="367" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please fill out this field.] but found [Please fill in this field.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please fill out this field.] but found [Please fill in this field.]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at SeleniumJavaAssignment.TestScenarios.fromDemo(TestScenarios.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromDemo -->
+        <test-method is-config="true" signature="onFailureTakeSS(org.testng.ITestResult)[pri:0, instance:SeleniumJavaAssignment.TestScenarios@563f38c4]" started-at="2025-01-15T21:54:48 IST" name="onFailureTakeSS" finished-at="2025-01-15T21:54:48 IST" duration-ms="177" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=fromDemo status=FAILURE method=TestScenarios.fromDemo()[pri:3, instance:SeleniumJavaAssignment.TestScenarios@563f38c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFailureTakeSS -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SeleniumJavaAssignment.TestScenarios@563f38c4]" started-at="2025-01-15T21:54:48 IST" name="tearDown" finished-at="2025-01-15T21:54:48 IST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SeleniumJavaAssignment.TestScenarios -->
+    </test> <!-- TestingWithEdge -->
+    <test started-at="2025-01-15T21:54:04 IST" name="TestingWithFirefox" finished-at="2025-01-15T21:55:05 IST" duration-ms="60647">
+      <class name="SeleniumJavaAssignment.TestScenarios">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumJavaAssignment.TestScenarios@202b0582]" started-at="2025-01-15T21:54:04 IST" name="setUp" finished-at="2025-01-15T21:54:22 IST" duration-ms="17590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows 11]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[130.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setURI()[pri:0, instance:SeleniumJavaAssignment.TestScenarios@202b0582]" started-at="2025-01-15T21:54:22 IST" name="setURI" finished-at="2025-01-15T21:54:26 IST" duration-ms="4541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setURI -->
+        <test-method signature="simpleFormDemo()[pri:1, instance:SeleniumJavaAssignment.TestScenarios@202b0582]" started-at="2025-01-15T21:54:26 IST" name="simpleFormDemo" finished-at="2025-01-15T21:54:35 IST" duration-ms="9044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleFormDemo -->
+        <test-method is-config="true" signature="onFailureTakeSS(org.testng.ITestResult)[pri:0, instance:SeleniumJavaAssignment.TestScenarios@202b0582]" started-at="2025-01-15T21:54:35 IST" name="onFailureTakeSS" finished-at="2025-01-15T21:54:36 IST" duration-ms="676" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=simpleFormDemo status=SUCCESS method=TestScenarios.simpleFormDemo()[pri:1, instance:SeleniumJavaAssignment.TestScenarios@202b0582] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFailureTakeSS -->
+        <test-method is-config="true" signature="setURI()[pri:0, instance:SeleniumJavaAssignment.TestScenarios@202b0582]" started-at="2025-01-15T21:54:36 IST" name="setURI" finished-at="2025-01-15T21:54:39 IST" duration-ms="2556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setURI -->
+        <test-method signature="sliderDemo()[pri:2, instance:SeleniumJavaAssignment.TestScenarios@202b0582]" started-at="2025-01-15T21:54:39 IST" name="sliderDemo" finished-at="2025-01-15T21:54:47 IST" duration-ms="8411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sliderDemo -->
+        <test-method is-config="true" signature="onFailureTakeSS(org.testng.ITestResult)[pri:0, instance:SeleniumJavaAssignment.TestScenarios@202b0582]" started-at="2025-01-15T21:54:47 IST" name="onFailureTakeSS" finished-at="2025-01-15T21:54:47 IST" duration-ms="425" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sliderDemo status=SUCCESS method=TestScenarios.sliderDemo()[pri:2, instance:SeleniumJavaAssignment.TestScenarios@202b0582] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFailureTakeSS -->
+        <test-method is-config="true" signature="setURI()[pri:0, instance:SeleniumJavaAssignment.TestScenarios@202b0582]" started-at="2025-01-15T21:54:47 IST" name="setURI" finished-at="2025-01-15T21:54:49 IST" duration-ms="1387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setURI -->
+        <test-method signature="fromDemo()[pri:3, instance:SeleniumJavaAssignment.TestScenarios@202b0582]" started-at="2025-01-15T21:54:49 IST" name="fromDemo" finished-at="2025-01-15T21:55:02 IST" duration-ms="13684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromDemo -->
+        <test-method is-config="true" signature="onFailureTakeSS(org.testng.ITestResult)[pri:0, instance:SeleniumJavaAssignment.TestScenarios@202b0582]" started-at="2025-01-15T21:55:02 IST" name="onFailureTakeSS" finished-at="2025-01-15T21:55:03 IST" duration-ms="406" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=fromDemo status=SUCCESS method=TestScenarios.fromDemo()[pri:3, instance:SeleniumJavaAssignment.TestScenarios@202b0582] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFailureTakeSS -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SeleniumJavaAssignment.TestScenarios@202b0582]" started-at="2025-01-15T21:55:03 IST" name="tearDown" finished-at="2025-01-15T21:55:05 IST" duration-ms="1897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SeleniumJavaAssignment.TestScenarios -->
+    </test> <!-- TestingWithFirefox -->
+    <test started-at="2025-01-15T21:54:04 IST" name="TestingWithChrome" finished-at="2025-01-15T21:55:10 IST" duration-ms="65947">
+      <class name="SeleniumJavaAssignment.TestScenarios">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:SeleniumJavaAssignment.TestScenarios@7b36aa0c]" started-at="2025-01-15T21:54:04 IST" name="setUp" finished-at="2025-01-15T21:54:58 IST" duration-ms="53439" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Windows 10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[128.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setURI()[pri:0, instance:SeleniumJavaAssignment.TestScenarios@7b36aa0c]" started-at="2025-01-15T21:54:58 IST" name="setURI" finished-at="2025-01-15T21:55:01 IST" duration-ms="3160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setURI -->
+        <test-method signature="simpleFormDemo()[pri:1, instance:SeleniumJavaAssignment.TestScenarios@7b36aa0c]" started-at="2025-01-15T21:55:01 IST" name="simpleFormDemo" finished-at="2025-01-15T21:55:03 IST" duration-ms="2096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleFormDemo -->
+        <test-method is-config="true" signature="onFailureTakeSS(org.testng.ITestResult)[pri:0, instance:SeleniumJavaAssignment.TestScenarios@7b36aa0c]" started-at="2025-01-15T21:55:03 IST" name="onFailureTakeSS" finished-at="2025-01-15T21:55:03 IST" duration-ms="362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=simpleFormDemo status=SUCCESS method=TestScenarios.simpleFormDemo()[pri:1, instance:SeleniumJavaAssignment.TestScenarios@7b36aa0c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFailureTakeSS -->
+        <test-method is-config="true" signature="setURI()[pri:0, instance:SeleniumJavaAssignment.TestScenarios@7b36aa0c]" started-at="2025-01-15T21:55:03 IST" name="setURI" finished-at="2025-01-15T21:55:03 IST" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setURI -->
+        <test-method signature="sliderDemo()[pri:2, instance:SeleniumJavaAssignment.TestScenarios@7b36aa0c]" started-at="2025-01-15T21:55:03 IST" name="sliderDemo" finished-at="2025-01-15T21:55:05 IST" duration-ms="1361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sliderDemo -->
+        <test-method is-config="true" signature="onFailureTakeSS(org.testng.ITestResult)[pri:0, instance:SeleniumJavaAssignment.TestScenarios@7b36aa0c]" started-at="2025-01-15T21:55:05 IST" name="onFailureTakeSS" finished-at="2025-01-15T21:55:05 IST" duration-ms="370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sliderDemo status=SUCCESS method=TestScenarios.sliderDemo()[pri:2, instance:SeleniumJavaAssignment.TestScenarios@7b36aa0c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFailureTakeSS -->
+        <test-method is-config="true" signature="setURI()[pri:0, instance:SeleniumJavaAssignment.TestScenarios@7b36aa0c]" started-at="2025-01-15T21:55:05 IST" name="setURI" finished-at="2025-01-15T21:55:05 IST" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setURI -->
+        <test-method signature="fromDemo()[pri:3, instance:SeleniumJavaAssignment.TestScenarios@7b36aa0c]" started-at="2025-01-15T21:55:05 IST" name="fromDemo" finished-at="2025-01-15T21:55:10 IST" duration-ms="4220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fromDemo -->
+        <test-method is-config="true" signature="onFailureTakeSS(org.testng.ITestResult)[pri:0, instance:SeleniumJavaAssignment.TestScenarios@7b36aa0c]" started-at="2025-01-15T21:55:10 IST" name="onFailureTakeSS" finished-at="2025-01-15T21:55:10 IST" duration-ms="470" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=fromDemo status=SUCCESS method=TestScenarios.fromDemo()[pri:3, instance:SeleniumJavaAssignment.TestScenarios@7b36aa0c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFailureTakeSS -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SeleniumJavaAssignment.TestScenarios@7b36aa0c]" started-at="2025-01-15T21:55:10 IST" name="tearDown" finished-at="2025-01-15T21:55:10 IST" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SeleniumJavaAssignment.TestScenarios -->
+    </test> <!-- TestingWithChrome -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="TestingWithEdgeInternet-Explorer(failed)">
+    <parameter name="browser" value="internet explorer"/>
+    <parameter name="browserversion" value="11.0"/>
+    <parameter name="platformname" value="Windows 10"/>
+    <classes>
+      <class name="SeleniumJavaAssignment.TestScenarios">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setURI"/>
+          <include name="simpleFormDemo"/>
+          <include name="fromDemo"/>
+          <include name="sliderDemo"/>
+          <include name="setUp"/>
+          <include name="onFailureTakeSS"/>
+        </methods>
+      </class> <!-- SeleniumJavaAssignment.TestScenarios -->
+    </classes>
+  </test> <!-- TestingWithEdgeInternet-Explorer(failed) -->
+  <test thread-count="5" parallel="tests" name="TestingWithEdge(failed)">
+    <parameter name="browser" value="edge"/>
+    <parameter name="browserversion" value="127.0"/>
+    <parameter name="platformname" value="macOS Ventura"/>
+    <classes>
+      <class name="SeleniumJavaAssignment.TestScenarios">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setURI"/>
+          <include name="fromDemo"/>
+          <include name="setUp"/>
+          <include name="onFailureTakeSS"/>
+        </methods>
+      </class> <!-- SeleniumJavaAssignment.TestScenarios -->
+    </classes>
+  </test> <!-- TestingWithEdge(failed) -->
+</suite> <!-- Failed suite [Suite] -->

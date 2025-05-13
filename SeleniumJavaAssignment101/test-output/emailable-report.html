@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">TestingWithEdgeInternet-Explorer</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">33,728</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TestingWithEdge</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">44,154</td><td></td><td></td></tr>
+<tr><td><a href="#t2">TestingWithFirefox</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">60,647</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">TestingWithChrome</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">65,947</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">8</th><th class="num">0</th><th class="num">0</th><th class="num attn">4</th><th class="num">204,476</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestingWithEdgeInternet-Explorer &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">SeleniumJavaAssignment.TestScenarios</td><td><a href="#m0">fromDemo</a></td><td rowspan="1">1736958276425</td><td rowspan="1">1606</td></tr><tr class="failedeven"><td><a href="#m1">simpleFormDemo</a></td><td rowspan="1">1736958260813</td><td rowspan="1">10840</td></tr><tr class="failedeven"><td><a href="#m2">sliderDemo</a></td><td rowspan="1">1736958272839</td><td rowspan="1">2650</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TestingWithEdge &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">SeleniumJavaAssignment.TestScenarios</td><td><a href="#m3">fromDemo</a></td><td rowspan="1">1736958288168</td><td rowspan="1">367</td></tr><tr><th colspan="4">TestingWithEdge &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">SeleniumJavaAssignment.TestScenarios</td><td><a href="#m4">simpleFormDemo</a></td><td rowspan="1">1736958285801</td><td rowspan="1">817</td></tr><tr class="passedeven"><td><a href="#m5">sliderDemo</a></td><td rowspan="1">1736958286891</td><td rowspan="1">988</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">TestingWithFirefox &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">SeleniumJavaAssignment.TestScenarios</td><td><a href="#m6">fromDemo</a></td><td rowspan="1">1736958289309</td><td rowspan="1">13684</td></tr><tr class="passedeven"><td><a href="#m7">simpleFormDemo</a></td><td rowspan="1">1736958266801</td><td rowspan="1">9044</td></tr><tr class="passedeven"><td><a href="#m8">sliderDemo</a></td><td rowspan="1">1736958279081</td><td rowspan="1">8411</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">TestingWithChrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">SeleniumJavaAssignment.TestScenarios</td><td><a href="#m9">fromDemo</a></td><td rowspan="1">1736958305782</td><td rowspan="1">4220</td></tr><tr class="passedeven"><td><a href="#m10">simpleFormDemo</a></td><td rowspan="1">1736958301269</td><td rowspan="1">2096</td></tr><tr class="passedeven"><td><a href="#m11">sliderDemo</a></td><td rowspan="1">1736958303894</td><td rowspan="1">1361</td></tr></tbody>
+</table>
+<h2>TestingWithEdgeInternet-Explorer</h2><h3 id="m0">SeleniumJavaAssignment.TestScenarios#fromDemo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Please fill out this field.] but found [This is a required field]
+	at SeleniumJavaAssignment.TestScenarios.fromDemo(TestScenarios.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">SeleniumJavaAssignment.TestScenarios#simpleFormDemo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[@id=&apos;message&apos;] (tried for 7 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: ff4a9342-7ff0-4ab1-9699-3cb...}
+Session ID: ff4a9342-7ff0-4ab1-9699-3cb17e2402ec
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at SeleniumJavaAssignment.TestScenarios.simpleFormDemo(TestScenarios.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">SeleniumJavaAssignment.TestScenarios#sliderDemo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Slider value did not update correctly. expected [95] but found [15]
+	at SeleniumJavaAssignment.TestScenarios.sliderDemo(TestScenarios.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestingWithEdge</h2><h3 id="m3">SeleniumJavaAssignment.TestScenarios#fromDemo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Please fill out this field.] but found [Please fill in this field.]
+	at SeleniumJavaAssignment.TestScenarios.fromDemo(TestScenarios.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">SeleniumJavaAssignment.TestScenarios#simpleFormDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">SeleniumJavaAssignment.TestScenarios#sliderDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestingWithFirefox</h2><h3 id="m6">SeleniumJavaAssignment.TestScenarios#fromDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">SeleniumJavaAssignment.TestScenarios#simpleFormDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">SeleniumJavaAssignment.TestScenarios#sliderDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestingWithChrome</h2><h3 id="m9">SeleniumJavaAssignment.TestScenarios#fromDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">SeleniumJavaAssignment.TestScenarios#simpleFormDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">SeleniumJavaAssignment.TestScenarios#sliderDemo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

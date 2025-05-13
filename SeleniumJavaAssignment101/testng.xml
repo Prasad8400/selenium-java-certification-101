@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	
+  <test thread-count="4" name="TestingWithChrome">
+   <parameter name="platformname" value="Windows 10"></parameter>
+   <parameter name="browser" value="chrome"></parameter>
+   <parameter name="browserversion" value="128.0"></parameter>  
+    <classes>
+      <class name="SeleniumJavaAssignment.TestScenarios"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="4" name="TestingWithEdge">
+   <parameter name="platformname" value="macOS Ventura"></parameter>
+   <parameter name="browser" value="edge"></parameter>
+   <parameter name="browserversion" value="127.0"></parameter>  
+    <classes>
+      <class name="SeleniumJavaAssignment.TestScenarios"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="4" name="TestingWithFirefox">
+   <parameter name="platformname" value="Windows 11"></parameter>
+   <parameter name="browser" value="firefox"></parameter>
+   <parameter name="browserversion" value="130.0"></parameter>  
+    <classes>
+      <class name="SeleniumJavaAssignment.TestScenarios"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="4" name="TestingWithEdgeInternet-Explorer">
+   <parameter name="platformname" value="Windows 10"></parameter>
+   <parameter name="browser" value="internet explorer"></parameter>
+   <parameter name="browserversion" value="11.0"></parameter>  
+    <classes>
+      <class name="SeleniumJavaAssignment.TestScenarios"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
