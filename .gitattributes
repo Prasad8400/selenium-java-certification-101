@@ -1,5 +1,4 @@
-test-output/* linguist-vendored
-target/surefire-reports/* linguist-vendored
-target/* linguist-vendored
+SeleniumJavaAssignment101/test-output/** linguist-vendored
+SeleniumJavaAssignment101/target/** linguist-vendored
+SeleniumJavaAssignment101/snaps/** linguist-vendored
 *.class linguist-vendored
-snaps/* linguist-vendored
