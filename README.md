@@ -20,6 +20,22 @@ This project contains automation code written for the **LambdaTest Selenium Java
 - Assertions to validate page content
 - Cross-browser testing potential
 
+## 🚀 Selenium Grid Configuration on LambdaTest
+
+As part of the testing setup, I configured a **Selenium Grid** on the **LambdaTest** cloud platform, enabling seamless execution of tests across multiple environments.
+
+### 🛠️ Key Highlights:
+- **Remote Test Execution:** Executed tests directly from my local setup, leveraging LambdaTest's cloud infrastructure.
+- **Parallel Testing:** Ran tests in parallel across various browsers and operating systems, ensuring faster feedback and broader test coverage.
+- **Scalability:** Utilized the power of cloud infrastructure for efficient and scalable **cross-browser testing**.
+
+This setup ensures maximum test efficiency and reliability in a cloud-based testing environment, providing flexibility to scale as needed.
+
+---
+
+By using LambdaTest's infrastructure, I was able to significantly reduce test execution time while ensuring that the tests were performed in real browser environments across different platforms.
+
+
 ## 📜 Certification
 
 I successfully completed and received the LambdaTest Selenium Java 101 certification.  
